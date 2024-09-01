@@ -1,0 +1,23 @@
+
+<div>
+    <div class="module-heading">Data Binding and Directives</div>
+    <div class="show-content">
+        <span>{{Interpolation}}</span>
+        <span>Property Binding</span>
+        <div>
+           <button appPrimaryButton [disabled]="!isShowBtn" (click)="toggleIsShowBtn()">Click Me</button>  <span *ngIf="isShowBtn">This True value</span>
+        </div>
+        <div>
+           <button appPrimaryButton [disabled]="isShowBtn" (click)="toggleIsShowBtn()">Click Me</button> <span *ngIf="!isShowBtn">This False value</span>
+        </div>
+        <div class="abc" *ngFor="let item of arrayList">
+            <span>{{item}}</span>
+        </div>
+        <div>
+    
+        </div>
+      
+    
+    </div>
+</div>
+

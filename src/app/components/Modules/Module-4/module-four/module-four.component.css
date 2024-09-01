@@ -1,0 +1,6 @@
+.show-content{
+    display: flex;
+    flex-flow: column;
+    gap: 10px;
+    margin: 14px;
+}
