@@ -1,0 +1,10 @@
+.show-content{
+    display: flex;
+    flex-flow: column;
+    gap: 10px;
+    margin: 14px;
+}
+.input{
+    padding: 7px;
+    border: 1px solid #000000;
+}

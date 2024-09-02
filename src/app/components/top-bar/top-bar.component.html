@@ -1,0 +1,13 @@
+<div class="top-bar">
+    <div class="logo">
+      Think & Develop
+    </div>
+    <div class="nav-items">
+      <a class="nav-btn" routerLink="">Home</a>
+      <a class="nav-btn" routerLink="about">About</a>
+      <button class="login-button" *ngIf="!isUserLoggedIn" (click)="logIn()">Log In</button>
+      <button class="login-button" *ngIf="isUserLoggedIn" (click)="logOut()">Log Out</button>
+    </div>
+  </div>
+  <router-outlet></router-outlet>
+  
