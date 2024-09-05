@@ -1,0 +1,21 @@
+<div>
+    <div class="module-heading">HTTP Client and Observables</div>
+    <div class="show-content">
+      <div>HTTP Client and Observables</div>
+      <form [formGroup]="form" class="form" (ngSubmit)="onSave()">
+        <div class="input-container">
+          <div>
+            <span class="mr-1">Enter Your Name:</span>
+            <input class="input mr-1" type="text" placeholder="Your name here" formControlName="name" />
+          </div>
+          <div>
+            <span class="mr-1">Enter Your Project Name:</span>
+            <input class="input mr-1" type="text" placeholder="Your project name here" formControlName="projectName" />
+          </div>
+          <div>
+            <button type="submit" appPrimaryButton class="button mr-1">Save</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>

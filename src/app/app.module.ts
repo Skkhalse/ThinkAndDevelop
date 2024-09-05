@@ -11,7 +11,11 @@ import { TopBarComponent } from './components/top-bar/top-bar.component';
 import { ModuleSixComponent } from './components/modules/Module-6/module-six/module-six.component';
 import { ModuleSevenComponent } from './components/modules/Module-7/module-seven/module-seven.component';
 import { WelcomeComponent } from './components/welcome/welcome.component';
-
+import { PostComponent } from './components/http/post/post.component';
+import { ModuleEightComponent } from './components/modules/Module-8/module-eight/module-eight.component';
+import { ReactiveFormsModule } from '@angular/forms'; 
+import { HttpClientModule } from '@angular/common/http';
+import { ModuleNineComponent } from './components/modules/Module-8/module-nine/module-nine.component'
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,11 +27,17 @@ import { WelcomeComponent } from './components/welcome/welcome.component';
     AboutComponent,
     TopBarComponent,
     ModuleSevenComponent,
-    WelcomeComponent
+    WelcomeComponent,
+    PostComponent,
+    ModuleEightComponent,
+    ModuleNineComponent,
+    
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
